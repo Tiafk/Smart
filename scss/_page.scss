@@ -1,0 +1,35 @@
+.first-page{
+  display: flex;
+  width: 100%;
+  font-family: 'Alef', sans-serif;
+  justify-content: center;
+  background-color: #F5F5F5;
+  .fiiling{
+    width: 1138px;
+    margin-top: 129px;
+    padding: 0px 5px;    
+    .fill-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .text{
+        display: flex;
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: #707070;
+        span{
+          margin-right: 16px;
+          color: #FC6744;
+        }
+      }
+      .text1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 25px;
+        font-size: 16px;
+        color: #707070;
+      }
+    }
+  }
+}

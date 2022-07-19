@@ -1,0 +1,35 @@
+.burger-menu{
+  position: relative;
+  height: 20px;
+  .btn{
+    display: flex;
+    flex-direction: column;
+    width: 37px;
+    height: 20px;
+    justify-content: space-between;
+    .lines{
+      width: 37px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #707070;
+      z-index: 100;
+    }
+  }
+  &.active{
+    .after{
+      transition: 0.3s transform;
+      transform: rotate(45deg);
+	    transform-origin: 3px 10px;
+    }
+    .before{
+      transition: 0.3s transform;
+      transform: rotate(-45deg);
+	    transform-origin: 16px 0px;
+    }
+    .btn{
+      .lines:first-child{
+        display: none;
+      }
+    }
+  }
+}

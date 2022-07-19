@@ -1,0 +1,36 @@
+header{
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  background-color: #F5F5F5;
+  font-family: 'Alef', sans-serif;
+  padding-top: 92px;
+  .container{
+    display: flex;
+    width: 1138px;
+    height: 55px;
+    justify-content: space-between;
+    z-index: 100000;
+    .smart{
+      align-items: center;
+      font-size: 37px;
+      border-radius: 2px;
+      padding: 0px 25px;
+      background: #F5F5F5;
+      border: 3px solid #170F1C;
+      &:first-letter{
+          color: #FC6744;
+      }
+    }
+    .line{
+        width: 34px;
+        margin-top: 4px;
+        border-radius: 2px;
+        border: 2px solid #707070;
+    }
+    & :first-child{
+        margin-top: 0;
+    }
+  }
+}

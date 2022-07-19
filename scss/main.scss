@@ -1,0 +1,414 @@
+@import './header';
+@import './page';
+@import './burger';
+@import './burger-nav';
+@import './message';
+@import './second-page';
+@import './tree-page';
+@import './four-page';
+@import './skill';
+@import './said';
+@import './footer';
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width:1130px) {
+  .modal-container{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    .box{
+      justify-content: center;
+      margin-bottom: 50px;
+      margin-right: 0;
+    }
+  }
+}
+@media (max-width:870px) {
+  .four-page{
+    margin-bottom: 125px;
+    .container{
+      .filling{
+        display: flex;
+        flex-direction: column;
+        .pichers{
+          display: flex;
+          width: 490px;
+          align-self: center;
+          justify-content: space-between;
+          margin-bottom: 50px;
+            &:last-child{
+              margin-right: 0;
+          }
+          .box{
+            margin-bottom: 0;
+          }
+        }
+        .text{
+          max-width: 490px;
+          margin-left: 0;
+          align-self: center;
+          .btn{
+            margin-top: 30px;
+            margin-bottom: 0;
+          }
+        }
+        .icon{
+          position: absolute;
+          opacity: 0;
+          pointer-events: none;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  .filling{
+    .fill-container{
+      .text{
+        font-size: 20px;
+      }
+      .text1{
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width:700px) {
+  header{
+    .container{
+      padding: 0px 5px;
+      .smart{
+        font-size: 25px;
+        border: 2px solid black;
+      }
+      .burger-menu{
+        .btn{
+          height: 15px;
+          .lines{
+            width: 29px;
+            height: 3px;
+          }
+          .before{
+            transform-origin: 13px 0px ;
+          }
+        }
+      }
+    }
+  }
+  .first-page{
+    .fiiling{
+      padding: 0px 5px;
+      .fill-container{
+        .text{
+          font-size: 25px;
+        }
+        .text1{
+          padding: 0px 20px;
+          font-size: 12px;
+          align-items: start;
+          line-height: 1.5;
+        }
+      }
+      .message{
+        width: 45%;
+        .container{
+          .logo{
+            font-size: 14px;
+          }
+          input{
+            display: flex;
+            align-self: center;
+            font-size: 10px;
+            width: 100px;
+            margin-top: 15px;
+          }
+          .btn{
+            padding: 10px 8px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  .second-page{
+    padding: 0px 5px;
+    .page-container{
+      .text{
+        text-align: center;
+        .top{
+          font-size: 25px;
+        }
+        .bot{
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+      .modal-container{
+        .box{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .tree-page{
+    .container{
+      padding: 0px 5px;
+      .text{
+        .top{
+          font-size: 25px;
+        }
+        .bot{
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+      .box-container{
+        gap: 2px;
+        .box{
+          height: 150px;
+        }
+      }
+    }
+  }
+  .four-page{
+    margin-bottom: 125px;
+    padding: 0px 5px;
+    .container{
+      .top{
+        .head{
+          font-size: 25px;
+        }
+        .text{
+          display: flex;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+      .filling{
+        display: flex;
+        flex-direction: column;
+        .pichers{
+          display: flex;
+          max-width: 360px;
+          align-self: center;
+          justify-content: space-between;
+          margin-bottom: 50px;
+            &:last-child{
+              margin-right: 0;
+            }
+            .box{
+              width: 70px;
+              height: 70px;
+            }
+        }
+        .text{
+          width: 360px;
+          margin-left: 0;
+          align-self: center;
+          .btn{
+            margin-top: 30px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .skill{
+    .container{
+      padding: 0px 5px;
+      .top{
+        .head{
+          font-size: 25px;
+        }
+        .text{
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+      .container-box{
+        gap: 5px;
+        .box{
+          height: 300px;
+          .cartoon{
+            padding: 0;
+            height: 50px;
+            justify-content: center;
+            .top{
+              font-size: 12px;
+            }
+            .bot{
+              font-size: 9px;
+            }
+          }
+          .lines{
+            margin-top: 70px;
+            font-size: 12px;
+          }
+          .bottom{
+            .text{
+              .first{
+                font-size: 14px;
+              }
+              .second{
+                font-size: 10px;
+              }
+            }
+            .dots{
+              .square{
+                padding: 2px 1px;
+                margin-right: 10px;
+                &:last-child{
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .said{
+    .title{
+      .head{
+        font-size: 25px;
+      }
+      .sub-text{
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    .image-slider{
+      &__body, &__footer{
+        font-size: 10px;
+      }
+      &__slide{
+        height: 150px;
+      }
+      .swiper-button-prev, .swiper-button-next{
+        top: 80%;
+      }
+    }
+  }
+  .footer{
+    height: 169px;
+    .container{
+      .btn{
+        padding: 11px 50px;
+        font-size: 12px;
+        margin-bottom: 24px;
+      }
+      .bot-container{
+        .circle-container{
+          .circle{
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .text{
+          font-size: 12px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:470px) {
+  .said{
+    .image-slider{
+      .swiper-button-prev, .swiper-button-next{
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+}
+@media (max-width: 340px) {
+  .first-page{
+    .fiiling{
+      .fill-container{
+        .text{
+          font-size: 20px;
+        }
+        .text1{
+          padding: 0;
+        }
+      }
+    }
+  }
+  .tree-page{
+    .container{
+      .text{
+        .top{
+          font-size: 25px;
+        }
+        .bot{
+          text-align: center;
+        }
+      }
+      .box-container{
+        .box{
+          height: 110px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:280px){
+  .four-page{
+    margin-bottom: 125px;
+    .container{
+      .filling{
+        display: flex;
+        flex-direction: column;
+        .pichers{
+          display: flex;
+          width: 270px;
+          align-self: center;
+          justify-content: space-between;
+          margin-bottom: 50px;
+            &:last-child{
+              margin-right: 0;
+            }
+          .box{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 0;
+          }
+        }
+        .text{
+          max-width: 270px;
+          margin-left: 0;
+          align-self: center;
+          .head{
+            font-size: 18px;
+          }
+          span{
+            font-size: 12px;
+          }
+          .btn{
+            margin-top: 30px;
+            margin-bottom: 0;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+  .skill{
+    .container{
+      .container-box{
+        margin-bottom: 120px;
+        .box{
+          height: 240px;
+          .cartoon{
+            width: 72px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
